@@ -1,0 +1,83 @@
+[versions]
+agp = "8.4.0"
+compassPermissions = "1.13.0"
+koinCore = "3.5.3"
+kotlin = "1.9.22"
+composeGradlePlugin = "1.6.0"
+compose = "1.6.3"
+compose-material3 = "1.1.2"
+androidx-activityCompose = "1.8.0"
+kotlinxDatetime = "0.6.1"
+kotlinxSerializationJson = "1.5.1"
+ksp = "1.9.20-1.0.14"
+ktorClientCore = "2.3.0"
+kotlin-result = "1.1.17"
+lifecycleViewmodelKtx = "2.9.0"
+mockkCommon = "1.12.5"
+runtime = "1.5.5"
+permissionsCompose = "0.19.1"
+androidx-lifecycle = "2.8.2"
+sqlite = "2.5.0-alpha01"
+roomRuntime = "2.7.0-alpha01"
+kotlinCoroutines = "1.7.3"
+skie = "0.6.2"
+compass = "1.2.2"
+turbine = "1.0.0"
+connectivity = "1.1.3"
+
+
+[libraries]
+android-driver = { module = "com.squareup.sqldelight:android-driver", version.ref = "runtime" }
+androidx-lifecycle-viewmodel = { group = "org.jetbrains.androidx.lifecycle", name = "lifecycle-viewmodel", version.ref = "androidx-lifecycle" }
+connectivity-device = { module = "dev.jordond.connectivity:connectivity-device", version.ref = "connectivity" }
+androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "roomRuntime" }
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinCoroutines" }
+kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "kotlinCoroutines" }
+kotlinx-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "kotlinxDatetime" }
+ktor-client-logging = { module = "io.ktor:ktor-client-logging", version.ref = "ktorClientCore" }
+mockk = { module = "io.mockk:mockk", version.ref = "mockkCommon" }
+mockk-common = { module = "io.mockk:mockk-common", version.ref = "mockkCommon" }
+native-driver = { module = "com.squareup.sqldelight:native-driver", version.ref = "runtime" }
+sqldelight-runtime = { module = "com.squareup.sqldelight:runtime", version.ref = "runtime" }
+sqlite-bundled = { module = "androidx.sqlite:sqlite-bundled", version.ref = "sqlite" }
+sqlite = { module = "androidx.sqlite:sqlite", version.ref = "sqlite" }
+kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activityCompose" }
+compose-ui = { module = "androidx.compose.ui:ui", version.ref = "compose" }
+compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "compose" }
+compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose" }
+compose-material3 = { module = "androidx.compose.material3:material3", version.ref = "compose-material3" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
+koin-core = { module = "io.insert-koin:koin-core", version.ref = "koinCore" }
+koin-android = { module = "io.insert-koin:koin-android", version.ref = "koinCore" }
+ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktorClientCore" }
+ktor-client-darwin = { module = "io.ktor:ktor-client-darwin", version.ref = "ktorClientCore" }
+ktor-client-okhttp = { module = "io.ktor:ktor-client-okhttp", version.ref = "ktorClientCore" }
+ktor-negotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktorClientCore" }
+ktor-serialization = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktorClientCore" }
+
+kotlin-result = { module = "com.michael-bull.kotlin-result:kotlin-result", version.ref = "kotlin-result" }
+kotlin-result-coroutines = { module = "com.michael-bull.kotlin-result:kotlin-result-coroutines", version.ref = "kotlin-result" }
+
+compass-geocoder = { module = "dev.jordond.compass:geocoder", version.ref = "compass" }
+compass-geocoder-mobile = { module = "dev.jordond.compass:geocoder-mobile", version.ref = "compass" }
+compass-geolocation = { module = "dev.jordond.compass:geolocation", version.ref = "compass" }
+compass-geolocation-mobile = { module = "dev.jordond.compass:geolocation-mobile", version.ref = "compass" }
+turbine = { module = "app.cash.turbine:turbine", version.ref = "turbine" }
+permissions-compose = { module = "dev.icerock.moko:permissions-compose", version.ref = "permissionsCompose" }
+permissions-location = { module = "dev.icerock.moko:permissions-location", version.ref = "permissionsCompose" }
+
+[bundles]
+result = ["kotlin-result", "kotlin-result-coroutines"]
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
+kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+room = { id = "androidx.room", version.ref = "roomRuntime" }
+composeJetbrain = { id = "org.jetbrains.compose", version.ref = "composeGradlePlugin" }
+kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+kotlinCocoapods = { id = "org.jetbrains.kotlin.native.cocoapods", version.ref = "kotlin" }
+skie = { id = "co.touchlab.skie", version.ref = "skie"}
+

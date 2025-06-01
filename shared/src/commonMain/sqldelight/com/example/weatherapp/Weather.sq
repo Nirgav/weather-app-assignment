@@ -1,0 +1,19 @@
+CREATE TABLE Weather (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    temperature REAL,
+    windSpeed REAL,
+    timestamp INTEGER,
+    windDirection REAL,
+    is_day REAL,
+    interval REAL
+);
+
+selectAll:
+SELECT * FROM Weather;
+
+insertWeather:
+INSERT INTO Weather(temperature, windSpeed, timestamp, windDirection, is_day, interval)
+VALUES (?, ?, ?,?,?,?);
+
+getLatest:
+SELECT * FROM Weather ORDER BY timestamp DESC LIMIT 1;
